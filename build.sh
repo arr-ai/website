@@ -13,17 +13,3 @@ hugo -t hugo-whisper-theme # if using a theme, replace with `hugo -t <YOURTHEME>
 
 # Go To Public folder
 mv public/* ../docs
-
-# Add changes to git.
-git add -A
-
-# Commit changes.
-msg="rebuilding site $(date)"
-if [ -n "$*" ]; then
-	msg="$*"
-fi
-git commit -m "$msg"
-
-# Push source and build repos.
-# git push origin master
-git push -f origin master
