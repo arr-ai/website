@@ -1,6 +1,6 @@
-baseURL = "www.example.com"
+baseURL = "www.joshcarp.com/arrai-website"
 languageCode = "en-us"
-title = "Hugo Whisper Theme"
+title = "Arrai"
 themesDir = "themes"
 theme = "hugo-whisper-theme"
 
