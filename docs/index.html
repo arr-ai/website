@@ -83,23 +83,23 @@ No it does not</p>
    <tr>
     <td style="text-align: center; vertical-align: middle;">
         <br></br>
-        <p>thisisAcomment</p>
+        <p>Evaluate an expression: arrai eval</p>
     </td>
         <td style="text-align: center; vertical-align: middle;">
             
             
             
-            <input id="input1" style="font: 16px monospace" value=[1,2,3,4]&#32;&gt;&gt;&#32;.^2 oninput="run( 'input1', 'output1');">
+            <input id="input1" style="font: 16px monospace" value=41&#32;&#43;&#32;1 oninput="run( 'input1', 'output1');">
         </td>
         <td style="text-align: center; vertical-align: middle;">
-            <h1 id="output1" style="font: 16px monospace">[1,4,9,16]</h1>
+            <h1 id="output1" style="font: 16px monospace">42</h1>
         </td>
     </tr>
 
    <tr>
     <td style="text-align: center; vertical-align: middle;">
         <br></br>
-        <p>yes</p>
+        <p>Evaluate count of string: arrai eval</p>
     </td>
         <td style="text-align: center; vertical-align: middle;">
             
@@ -109,6 +109,70 @@ No it does not</p>
         </td>
         <td style="text-align: center; vertical-align: middle;">
             <h1 id="output2" style="font: 16px monospace">9</h1>
+        </td>
+    </tr>
+
+   <tr>
+    <td style="text-align: center; vertical-align: middle;">
+        <br></br>
+        <p>Evaluate a collection of values: arrai eval</p>
+    </td>
+        <td style="text-align: center; vertical-align: middle;">
+            
+            
+            
+            <input id="input3" style="font: 16px monospace" value=&#39;[1,2,3,4]&#32;&gt;&gt;&#32;.^2 oninput="run( 'input3', 'output3');">
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+            <h1 id="output3" style="font: 16px monospace">[1,4,9,16]</h1>
+        </td>
+    </tr>
+
+   <tr>
+    <td style="text-align: center; vertical-align: middle;">
+        <br></br>
+        <p>Filter a collection of values: arrai eval</p>
+    </td>
+        <td style="text-align: center; vertical-align: middle;">
+            
+            
+            
+            <input id="input4" style="font: 16px monospace" value={(a:1,&#32;b:2),&#32;(a:2,&#32;b:3),&#32;(a:2,&#32;b:4)}&#32;where&#32;.a&#61;2 oninput="run( 'input4', 'output4');">
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+            <h1 id="output4" style="font: 16px monospace">{(a:2, b:4)}</h1>
+        </td>
+    </tr>
+
+   <tr>
+    <td style="text-align: center; vertical-align: middle;">
+        <br></br>
+        <p>Operations for filtering a stream of values: arrai eval</p>
+    </td>
+        <td style="text-align: center; vertical-align: middle;">
+            
+            
+            
+            <input id="input5" style="font: 16px monospace" value=&#39;123456789&#39;&#32;count oninput="run( 'input5', 'output5');">
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+            <h1 id="output5" style="font: 16px monospace">9</h1>
+        </td>
+    </tr>
+
+   <tr>
+    <td style="text-align: center; vertical-align: middle;">
+        <br></br>
+        <p>Operations for filtering a stream of values: arrai eval</p>
+    </td>
+        <td style="text-align: center; vertical-align: middle;">
+            
+            
+            
+            <input id="input6" style="font: 16px monospace" value={(a:1,&#32;b:2),&#32;(a:2,&#32;b:3),&#32;(a:2,&#32;b:4)}&#32;where&#32;.a&#61;2&#32;and&#32;.b&#61;3 oninput="run( 'input6', 'output6');">
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+            <h1 id="output6" style="font: 16px monospace">9</h1>
         </td>
     </tr>
 
