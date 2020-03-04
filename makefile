@@ -11,4 +11,4 @@ test:
 	node _hugo/static/wasm_exec.js _hugo/static/main.wasm eval '41 + 1'
 
 build-website:
-	./deploy.sh
+	./build.sh
