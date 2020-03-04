@@ -9,21 +9,24 @@ on:
       - '*'
 jobs:
   build-and-test-sysl_js:
+
     name: Build and test sysl_js on linux
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Go 1.13
+        uses: actions/setup-go@v1
+        with:
+          go-version: 1.13
+        id: go
+
+      - name: Build wasm
+        run: |
+          GOOS=js GOARCH=wasm go build -o main.wasm github.com/arr-ai/arrai/cmd/arrai
+
       - name: Set up Node
         uses: actions/setup-node@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Check out code
-        uses: actions/checkout@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build wasm
-        run: |
-          GOOS=js GOARCH=wasm go build -o main.wasm github.com/arr-ai/arrai/cmd/arrai
       - name: Install and test sysl_js
         run: |
           node _hugo/static/wasm_exec.js _hugo/static/main.wasm eval '41 + 1'
