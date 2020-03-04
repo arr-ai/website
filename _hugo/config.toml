@@ -1,4 +1,4 @@
-baseURL = "www.joshcarp.com/arrai-website"
+baseURL = "arrai-website/"
 languageCode = "en-us"
 title = "Arrai"
 themesDir = "themes"
