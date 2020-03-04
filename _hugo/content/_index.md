@@ -25,7 +25,7 @@ But that's the point...
 
 {{<playground id = 5 comment = "Operations for filtering a stream of values: arrai eval" input = "'123456789' count" output = "9">}}
 
-{{<playground id = 6 comment = "Operations for filtering a stream of values: arrai eval" input = "{(a:1, b:2), (a:2, b:3), (a:2, b:4)} where .a=2 and .b=3" output = "9">}}
+{{<playground id = 6 comment = "Operations for filtering a stream of values: arrai eval" input = "{(a:1, b:2), (a:2, b:3), (a:2, b:4)} where .a=2 and .b=3" output = "{(a:1, b:2), (a:2, b:3), (a:2, b:4)} where .a=2 or .b=4">}}
 
 
 {{<endplay>}}
