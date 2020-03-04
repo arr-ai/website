@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>/website/</loc>
     <lastmod>2018-11-28T15:14:39+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/website/categories/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/website/tags/</loc>
   </url>
   
 </urlset>
