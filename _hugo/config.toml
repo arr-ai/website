@@ -1,4 +1,4 @@
-baseURL = "arrai-website/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Arrai"
 themesDir = "themes"
@@ -24,7 +24,7 @@ summaryLength = 30
     meta_description = "The ultimate data engine."
     meta_og_title = "Arrai"
     meta_og_type = "website"
-    meta_og_url = "arrai-website/"
+    meta_og_url = "/"
     meta_og_description = "The ultimate data engine."
     meta_twitter_card = "summary"
 

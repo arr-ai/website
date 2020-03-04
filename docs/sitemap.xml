@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>arrai-website/</loc>
+    <loc>/</loc>
     <lastmod>2018-11-28T15:14:39+10:00</lastmod>
   </url>
   
   <url>
-    <loc>arrai-website/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>arrai-website/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
