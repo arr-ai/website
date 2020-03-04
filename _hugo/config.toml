@@ -1,10 +1,33 @@
-baseURL = "https://joshcarp.com/presentations"
+baseURL = "www.example.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Hugo Whisper Theme"
+themesDir = "themes"
+theme = "hugo-whisper-theme"
 
-theme = "reveal-hugo"
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
 
-[outputFormats.Reveal]
-baseName = "index"
-mediaType = "text/html"
-isHTML = true
+summaryLength = 30
+
+
+[params]
+  google_analytics_id=""
+  homepage_button_link = 'https://github.com/arr-ai/arrai'
+  homepage_button_text = 'See on Github'
+  homepage_intro = 'The ultimate data engine.'
+
+  ## You can enable to add anchor links to header elements
+  # enable_anchor_link = true
+
+  [params.homepage_meta_tags]
+    meta_description = "The ultimate data engine."
+    meta_og_title = "Arrai"
+    meta_og_type = "website"
+    meta_og_url = "https://www.joshcarp.com/arrai-website/"
+    meta_og_description = "The ultimate data engine."
+    meta_twitter_card = "summary"
+
+  [params.logo]
+      standard = "arrai-logo.png"
+

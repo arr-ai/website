@@ -1,0 +1,15 @@
+   <tr>
+    <td style="text-align: center; vertical-align: middle;">
+        <br></br>
+        <p>{{.Get "comment"}}</p>
+    </td>
+        <td style="text-align: center; vertical-align: middle;">
+            {{$id := .Get "id"}}
+            {{$input := .Get "input"}}
+            {{$output := .Get "output"}}
+            <input id="input{{$id}}" style="font: 16px monospace" value={{$input}} oninput="run( 'input{{$id}}', 'output{{$id}}');">
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+            <h1 id="output{{$id}}" style="font: 16px monospace">{{$output}}</h1>
+        </td>
+    </tr>
