@@ -37,6 +37,6 @@ jobs:
 
     - name: Run tests
       run: node wasm_exec.js main.wasm
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: "SOME-RANDOM-KEY"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_AUTH_TOKEN: "SOME-RANDOM-KEY"
