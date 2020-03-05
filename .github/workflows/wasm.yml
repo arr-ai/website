@@ -9,7 +9,7 @@ on:
 jobs:
 
   build:
-    name: Build
+    name: Build and Test Wasm
     runs-on: ubuntu-latest
     steps:
     - name: Set up Go 1.14
